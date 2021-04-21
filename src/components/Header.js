@@ -2,7 +2,7 @@ import React from 'react';
 
 const Header = ({pseudo}) => {
     //permets de tester si besoin d'apostrophes pour le pseudo
-    const formatPseudo = pseudo=> /[aeiouy]/i.test(pseudo[0])?`d'${pseudo}`:`de${pseudo}`
+    const formatPseudo = pseudo=> /[aeiouy]/i.test(pseudo[0])?`d'${pseudo}`:`de ${pseudo}`
     console.log(formatPseudo(pseudo))
     return(
         <header>
