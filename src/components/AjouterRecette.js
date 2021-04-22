@@ -18,6 +18,10 @@ class AjouterRecette extends Component {
         event.preventDefault()
         const recette = { ...this.state}
         this.props.ajouterRecette(recette)
+        Object.keys(recette).forEach(item => {
+            recette[item] = ''
+        })
+        this.setState({ ...recette })
     }
 
 
