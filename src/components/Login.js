@@ -5,7 +5,7 @@ const Login = ({ authenticate }) => {
         <div className='login'>
             <h2>Connecte toi pour créer tes recettes</h2>
             <button onClick={authenticate} className="facebook-button">
-                Me connecter avec facebook
+                Connectez vous avec facebook
             </button>
         </div>
     )
